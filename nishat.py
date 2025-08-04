@@ -1,38 +1,38 @@
-# name = input("enter your name")
-# print("hello",name,"welcome")
-#
-#
-# age = input("enter you are")
-# print('hello',age,'year old')
-#
-#
-#
-# name = 'nishat'
-# age= 23
-# city ="dhaka"
-# print(name,age,city)
+name = input("enter your name")
+print("hello",name,"welcome")
 
 
-# x ,y =input("enter two value").split()
-#
-# print("number of boys",x)
-# print("number of girls",y)
-#
-# x ,y ,z =input("enter you number").split()
-# print("enter number",x)
-# print("enter number",y)
-# print("enter number ",z)
+age = input("enter you are")
+print('hello',age,'year old')
 
-#
-# a = "hello world"
-# b = 10
-# c= 11.12
-# d=('nishat','nuri','rafi')
-#
-# print(type(a))
-# print(type(b))
-# print(type(c))
-# print(type(d))
+
+
+name = 'nishat'
+age= 23
+city ="dhaka"
+print(name,age,city)
+
+
+x ,y =input("enter two value").split()
+
+print("number of boys",x)
+print("number of girls",y)
+
+x ,y ,z =input("enter you number").split()
+print("enter number",x)
+print("enter number",y)
+print("enter number ",z)
+
+
+a = "hello world"
+b = 10
+c= 11.12
+d=('nishat','nuri','rafi')
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
 
 amount= 12.346
 print('amount:${:.8f}'.format(amount))
