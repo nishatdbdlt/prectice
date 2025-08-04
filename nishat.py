@@ -79,49 +79,97 @@ def combine_strings(a, b):
 
 
 
-# Test with the given example
-# array
+# # Test with the given example
+# # array
+#
+# arr =[0] * 6
+# print(arr)
+#
+# arr =[[1,2,4],[2,3,4],[3,4,5]]
+# print('first elemant of frist row',arr[0][0])
+# print('third element of third row',arr[1][2])
+# print('secound element of tird row',arr[2][1])
+#
+#
+# arr=[
+#      [1, 2, 4],
+#      [3, 4, 5],
+#      [5, 6, 7, 23]
+#
+#  ]
+# for row in arr:
+#      for x in row:
+#         print(x,end=' ')
+#      print()
+# arr = [
+#     [1, 2, 3, 4],
+#     [5, 6, 7, 8],
+#     [9, 10, 11, 12]
+# ]
+#
+# # Traversing each row
+# for row in arr:
+#
+#     # Traversing each element
+#     # in the current row
+#     for x in row:
+#         print(x, end=" ")
+#     print()
+#
+# arr =[
+#     [1,2,4,5],
+#     [7,6,5,4,3],
+#     [8,7,6]
+# ]
+# for row in arr:
+#     for x in row:
+#         print(x,end=" ")
+#     print()
+#
+#
+# num=['nishat','nuri','rafi']
+# print(num[1])
+# print(num[-1])
+# num.append('nus')
+# print(num)
+# num.remove('nuri')
+# print(num)
+# for num in num:
+#     print(num)
+#
+# nishat=[1,2,3,4,5]
+# nishat.append(4)
+# nishat.remove(4)
+# nishat.pop()
+# for nishat in nishat:
+#   print(nishat)
 
-arr =[0] * 6
-print(arr)
+marks=[78,78,65,43,32]
+copy_marks=marks.copy()
+copy_marks.append(78)
+print('orginal',marks)
+print(copy_marks)
+#linear search
 
-arr =[[1,2,4],[2,3,4],[3,4,5]]
-print('first elemant of frist row',arr[0][0])
-print('third element of third row',arr[1][2])
-print('secound element of tird row',arr[2][1])
 
+def linner_search(arr,target):
+    for i in  range (len(arr)):
+        if arr[i] == target:
+            return i
+        return 1
+numbers=[45,56,78,90]
+target= 56
+result=linner_search(numbers,target)
+print(result)
 
-arr=[
-     [1, 2, 4],
-     [3, 4, 5],
-     [5, 6, 7, 23]
+def linner_search(arr,target):
+    for i in range (len(arr)):
+        if arr[i] == target:
+            return i
 
- ]
-for row in arr:
-     for x in row:
-        print(x,end=' ')
-     print()
-arr = [
-    [1, 2, 3, 4],
-    [5, 6, 7, 8],
-    [9, 10, 11, 12]
-]
+    return -1
+num=[3,4,5,6,7,8]
 
-# Traversing each row
-for row in arr:
-
-    # Traversing each element
-    # in the current row
-    for x in row:
-        print(x, end=" ")
-    print()
-
-arr =[
-    [1,2,4,5],
-    [7,6,5,4,3],
-    [8,7,6]
-]
-for row in arr:
-    for x in row:
-        print(x,end=" ")
-    print()
+target=4
+nishat=linner_search(num,target)
+print(nishat)
