@@ -163,7 +163,9 @@
 # target=4
 # nishat=linner_search(num,target)
 # print(nishat)
+from codecs import make_identity_dict
 from operator import truediv
+from zoneinfo import reset_tzpath
 
 # numbers = [1,2,4,5,6]
 # print("length = ",len(numbers))
@@ -275,4 +277,103 @@ else:
 arr = [22,44,55,66,77]
 arr.append(34)
 arr.insert(2,56)
+
+arr.remove(22)
+del arr[3]
 print(arr)
+
+arr = [10, 20, 30]
+arr.append(100)
+arr.insert(1,50)
+del arr[0]
+print(arr)
+
+
+arr = [1, 2, 2, 3, 4, 4, 4, 5]
+target = 4
+count =0
+for num in arr:
+    if num == target:
+     count+=1
+print(f"{target} appears {count} time")
+
+
+arr = [7, 8, 7, 5, 6, 7, 5, 8]
+target = 8
+count =0
+for num in arr:
+    if num == target:
+        count+=1
+print(f"{target}appears{count} time")
+
+
+arr =[22,3,4,5,66,7,7,7,7]
+target =7
+count =0
+for num in arr:
+    if num == target:
+        count+=1
+print(f"{target} appears{count} time")
+
+
+arr =[33,3,3,33,44]
+minimum=arr[0]
+for num in arr:
+    if num < minimum:
+        minimum=num
+print(minimum)
+
+arr =[33,3,3,33,44]
+maximun= arr[0]
+for num in arr:
+    if num > maximun:
+        maximun=num
+print(maximun)
+
+# def binnay_search(arr,target):
+#     low= 0
+#     high=len(arr)
+#     while low < high:
+#         mid=low + high /2
+#         return mid
+#     if low < mid :
+#         return low
+#     elif high > mid:
+#         return high
+#     else:
+#         return i
+# arr=[1,3,4,5,]
+# target =1
+# nis=binnay_search(arr,target)
+# print(nis)
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_coutn=0
+odd_coutn =0
+for num in arr:
+    if num % 2==0:
+        even_coutn+=1
+    else:
+        odd_coutn+=1
+print(even_coutn)
+print(odd_coutn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
