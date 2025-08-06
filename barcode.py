@@ -12,4 +12,4 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 img.save("my_qrcode.png")
 
-print("✅ QR Code saved as: my_qrcode.png")
+print("QR Code saved as: my_qrcode.png")
