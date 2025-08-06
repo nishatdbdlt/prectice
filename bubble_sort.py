@@ -157,3 +157,37 @@ def check_sorted(arr):
 
 print(check_sorted([10,20,30,40,50]))
 
+
+# arr=[3,4,5,6,7,2,2,4,5]
+# freq={}
+# for num in arr:
+#     if num in freq:
+#         freq[num] +=1
+#     else:
+#         freq[num] =1
+# for key in freq:
+#     print(f"{key} {freq[key]} times")
+
+arr=[3,3,3,1,1,2,2,44,5]
+freq ={}
+for num in arr:
+    if num in freq:
+        freq[num] +=1
+    else:
+        freq[num] =1
+for key in freq:
+    print(f"{key} {freq[key]} times")
+
+
+arr = [3, 3, 3, 1, 1, 2, 2, 44, 5]
+freq = {}
+
+for num in arr:  # ✅ এখানে arr এর ওপর লুপ
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+# রেজাল্ট দেখাও
+for key in freq:
+    print(f"{key} → {freq[key]} times")
