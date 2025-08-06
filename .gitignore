@@ -1,0 +1,3 @@
+git rm --cached bubble_sort.py
+git commit -m "Stop tracking bubble_sort.py"
+git push origin barcode
